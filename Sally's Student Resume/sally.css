@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(5, 143, 197) , transparent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: .3fr 1fr 1fr .3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.item {
+     font-size: 120%; 
+}
+
+.name {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 400%
+}
+.intro {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+    grid-row:2;
+
+}
+
+.experince {
+
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+
+
+
+.skills {
+    grid-column: 3;
+    grid-row: 4;
+
+}
+
+.contact {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+    grid-row:7;
+    text-align: center;
+
+    background-image: url("https://image1.masterfile.com/getImage/NjI1LTAwODAyNDg5ZW4uMDAwMDAwMDA=AC8-WO/625-00802489en_Masterfile.jpg");
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-position-y: 20px;
+    
+}
+
