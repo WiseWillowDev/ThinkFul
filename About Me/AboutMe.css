@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgba(255, 255, 255, 0.801)
+    background-color: rgba(126, 126, 126, 0.801)
 }
 
 .grid {
@@ -17,7 +17,7 @@ body {
     
     border: 1px solid rgb(20, 0, 107);
     border-radius: 3px;
-    background-color: rgba(20, 154, 172, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 0.2em;
     color: rgb(12, 48, 59);
      font-size: 120%; 
@@ -51,6 +51,14 @@ body {
     text-align: center;
 }
 
-
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+  }
 
 
