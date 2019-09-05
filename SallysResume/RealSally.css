@@ -13,6 +13,8 @@ body header h1{
 
 body{
     font-family: 'Roboto', sans-serif;
+    background:
+    linear-gradient( to top,rgb(0, 255, 191), rgb(0, 255, 255), transparent);
     /* display: grid;
     grid-template-columns: repeat(4 , 1fr); */
 }
