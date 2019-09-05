@@ -1,5 +1,7 @@
 figure {
-    width: 20%;
+    grid-column: 3;
+    grid-row: 1;
+    width: 30%;
 }
 
 img {
@@ -15,10 +17,38 @@ body{
     font-family: 'Roboto', sans-serif;
     background:
     linear-gradient( to top,rgb(0, 255, 191), rgb(0, 255, 255), transparent);
-    /* display: grid;
-    grid-template-columns: repeat(4 , 1fr); */
+    
+  
 }
-
+main {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
 footer {
     text-align: center;
+}
+
+.bio {
+    grid-column: 2;
+    grid-row: 1
+}
+
+.experience {
+    grid-column: 2;
+    grid-row: 2
+}
+
+.education {
+    grid-column: 2;
+    grid-row: 3
+}
+
+.skill {
+    grid-column: 2;
+    grid-row: 4
+}
+
+.contact {
+    grid-column: 2;
+    grid-row: 5
 }
