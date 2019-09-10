@@ -1,0 +1,76 @@
+body * {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Your styles go here! */
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(3 ,133px) repeat(3, 1fr);
+    grid-template-rows: repeat(7 , 14.286vh); /* 7 parts of 100 is 14.286 */
+    font-size: 3rem;
+    background-color: rgb(23, 130, 165);
+  }
+
+  figure {
+      grid-column: 5;
+      grid-row: 1;
+      width: 100%;
+      justify-self: center;
+  }
+ 
+
+ img {
+    width: 100%;
+    height: 35px;
+    object-fit: fit;
+ }
+ main {
+     grid-column: 4 / 7;
+     grid-row: 2 / 6;
+     justify-content: center;
+     background-color: white;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr); 
+     grid-template-rows: repeat(8 , 1fr);
+     
+ }
+ .signup,form, .emailInput , .emailLabel , .passwordInput ,.passwordInput , .signupbutton {
+     border: 1px solid black;
+ }
+ .signup{
+    grid-column: 6 / 8;
+    grid-row: 1 / 2;
+    justify-content: center;
+ }
+ .emailLabel {
+    grid-column: 2;
+    grid-row-start: 3;
+ }
+ .emailInput,#email {
+    grid-column: 2;
+    grid-row: 4;
+ }
+ .passwordLabel {
+    grid-column: 2;
+    grid-row: 5;
+ }
+ .passwordInput{
+    grid-column: 2;
+    grid-row: 6;
+ }
+ .signupbutton {
+    grid-column: 2;
+    grid-row: 7;
+ }
+
+ form {
+     grid-column: 2 / 12;
+     grid-row: 3 / 7;
+ }
