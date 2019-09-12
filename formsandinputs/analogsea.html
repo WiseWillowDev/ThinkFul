@@ -20,18 +20,20 @@
         <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png"
         alt="logo">
     </figure>
+    <div>
     <main>
         <h1 class="signup">Sign Up</h1>
-        <form>
-            <label class="emailLabel" for="email">Email</label>
-            <input class="emailInput" id="email" name="email" type="email">
-            <label class="passwordLabel" for="password">Password</label>
-            <input class="passwordInput" id="password" name="password" type="password">
-            <button class="signupbutton">Sign up</button>
+        <form method="post" action="/signup" object="user">
+            <label class="emailLabel" for="email" >Email</label>
+            <input required class="emailInput" id="email" name="email" type="email" placeholder="yourEmail@host.com">
+            <label class="passwordLabel" for="password" >Password</label>
+            <input required class="passwordInput" id="password" name="password" type="password" placeholder="password">
+            <button class="signupbutton" type="submit">Sign up</button>
         </form>
-        <p>Already have an account? Log in</p>
     </main>
-    
+</div>
+<p>Already have an account? <a href="/login">Log in </a></p>
+
 
 </body>
 </html>
