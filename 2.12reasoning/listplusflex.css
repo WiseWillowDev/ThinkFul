@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    /* font-size: 1.6rem; */
+}
+
+/* NAV BAR  */
+nav {
+    width: 100vw;
+    background-color: rgba(182, 182, 182, 0.418);
+    
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 7px;
+}
+nav ul li {
+    display: inline;
+    /* list-style-type: none; */
+    font-size: 2rem;
+}
+
+
+li a, p a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.link {
+    color: purple;
+    float:right;
+    margin-right: 1rem;
+}
+
+
+
+/* MAIN */
+
+main {
+    padding-top: 2%;
+    padding-left: 10%;
+}
+label {
+}
+form {
+}
+input {
+    width: 40vw;
+    display: block;
+    font-size: 1rem;
+    padding-left: 2px;
+    margin-top: 5px;
+    border: solid rgba(136, 136, 136, 0.212) 2px;
+    border-radius: 3px;
+}
+
+figure {
+    position: absolute;
+    left: 48vw;
+    top: 69px;
+    border: solid  rgba(136, 136, 136, 0.212) 2px;
+    border-radius: 3px;
+}
+
+img {
+    /* width: 20px; */
+    height: 18px;
+    width: 23px;
+
+}
+
+.clickers {
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+}
+section ul {
+    padding-left: 0;
+}
+
+section ul li {
+    display: inline;
+    border-right: solid rgba(136, 136, 136, 0.212) 1px;
+    border-top: solid rgba(136, 136, 136, 0.212) 1px;
+    border-bottom: solid rgba(136, 136, 136, 0.212) 1px;
+    margin-left: 0;
+    padding : 5px;
+}
+.previous { 
+    border-left: solid rgba(136, 136, 136, 0.212) 1px;
+
+}
+.numbers{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: -5px;
+}
+
+.results{
+    color: rgb(136, 136, 136);
+}
+
+.result {
+    color: blue;
+    font-size: 1.2rem;
+}
