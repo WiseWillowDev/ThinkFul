@@ -76,6 +76,9 @@
           border-top: solid rgba(167, 167, 167, 0.295) 1px;
           padding-top: 5px;
         }
+        .social_icon {
+            display: inline;
+        }
   }
   /* desktop */
   @media screen and (min-width: 1200px) {
@@ -90,7 +93,6 @@
             display: flex;
       }
       li {
-          display: inline;
           margin-left: 20px;
           margin-right: 20px;
       }
