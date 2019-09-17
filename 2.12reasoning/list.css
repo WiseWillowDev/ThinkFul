@@ -2,8 +2,10 @@ body {
     margin: 0;
     /* font-size: 62.5%; */
     box-sizing: border-box;
+    /* font-size: 1.6rem; */
 }
 
+/* NAV BAR  */
 nav {
     width: 100vw;
     background-color: rgba(182, 182, 182, 0.418);
@@ -12,6 +14,7 @@ nav {
 nav ul {
     padding: 0;
     margin: 0;
+    padding-bottom: 7px;
 }
 nav ul li {
     display: inline;
@@ -29,8 +32,13 @@ li a, p a {
 
 .link {
     color: purple;
-    
+    float:right;
+    margin-right: 1rem;
 }
+
+
+
+/* MAIN */
 
 main {
     padding-top: 2%;
@@ -84,6 +92,11 @@ section ul li {
 .previous { 
     border-left: solid rgba(136, 136, 136, 0.212) 1px;
 
+}
+.numbers{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: -5px;
 }
 
 .results{
