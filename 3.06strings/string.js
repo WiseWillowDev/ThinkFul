@@ -1,3 +1,4 @@
+// WISE PERSON FUNCTION
 function wisePerson(wiseType , whatToSay) {
     console.log('A wise %s once said: "%s". ' , wiseType , whatToSay);
 }
@@ -6,14 +7,18 @@ wisePerson('goat' , 'Hello world');
 wisePerson('mentor' , 'dont use divs');
 
 
+// SHOUTER FUNCTION 
 function shouter(whatToShout) {
     let shout = whatToShout.toUpperCase() + "!!!";
     console.log(shout);
 }
 shouter("meeeerrhhh");
 
+
+// TEXTNORMALIZER FUNCTION
 function textNormalizer(text) {
     let textFixed = text.toLowerCase();
+
     while(textFixed.charAt(0) == ' ') {
         textFixed = textFixed.substring(1 , textFixed.length);
         // console.log('Found a space in the beginning ');
@@ -29,3 +34,5 @@ function textNormalizer(text) {
 // you can add dynamically any amount of spaces in the end and beginning 
 let text = '  I want to TEST to SEE IF THIS might WoRk  ';
 textNormalizer(text);
+
+
