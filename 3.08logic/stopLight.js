@@ -1,25 +1,32 @@
 function doTrafficLights() {
-    const activeLight = getActiveLight();
-    // your code will replace this call
-    // to `console.log()`
-    if(activeLight === 'red'){
+  const activeLight = getActiveLight();
+  // your code will replace this call
+  // to `console.log()`
+  if(activeLight === 'red'){
+    turnRed();
+  } else if(activeLight === 'green') {
+    turnGreen();
+  } else if(activeLight === 'yellow'){
+    turnYellow();
+  } else {
+    setInterval(function(){
+      console.log('turn');
+      
+      setTimeout(function(){turnOffLights();},1500);
       turnRed();
-    } else if(activeLight === 'green') {
-      turnGreen();
-    } else {
-      turnYellow();
-    }
-  
-    console.log(activeLight);
-  
+      } , 3000)
   }
-  
-  // this function randomly returns red, yellow, or green
-  // and is called by doTrafficLights.
-  // don't modify it!
-  function getActiveLight() {
-    return (['red', 'green', 'yellow'])[Math.floor(Math.random() * 3)];
-  }
+
+  console.log(activeLight);
+
+}
+
+// this function randomly returns red, yellow, or green
+// and is called by doTrafficLights.
+// don't modify it!
+function getActiveLight() {
+return (['red', 'green', 'yellow', 'broken'])[Math.floor(Math.random() * 4)];
+}
   
   /* From here down, you are not expected to 
      understand.... for now :)  
