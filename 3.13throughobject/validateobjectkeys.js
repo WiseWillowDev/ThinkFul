@@ -19,40 +19,16 @@ const expectedKeys = ['id', 'name', 'age', 'city'];
 
 function validateKeys(object, expectedKeys) {
   // your code goes here
-  let count = 0;
-  let extra = false;
-  Object.keys(object).forEach(function(key) {
-          console.log(key);
-      let negativeCount = 0;
-
-    for(let i = 0; i < expectedKeys.length; i ++) {
-      console.log(expectedKeys[i]);
-      if(key === expectedKeys[i]) {
-        console.log('found it');
-        count++;
-        break;
-      } else {
-        negativeCount++;
-      }
-      if(negativeCount === expectedKeys.length) {
-        extra = true;
-      }
-    }
-    console.log(`count = ${count}`);
-
-  });
-    if(extra) {
-      return false;
-    }
-    if(count === expectedKeys.length) {
-      console.log('returned true');
-      console.log(' ');
-      return true;
-
-    }
-    console.log("returned false");
-    console.log(' ');
+  if(Object.keys(object).length != expectedKeys.length) {
     return false;
+  }
+  let result = true;
+  Object.keys(object).forEach(function(key) {
+    if(!expectedKeys.includes(key)) {
+      result = false;
+    }
+  });
+  return result;
 }
 
 /* From here down, you are not expected to 
