@@ -1,10 +1,11 @@
 function isDivisible(divisee, divisor) {
     // your code here
-    let remainder = divisee % divisor;
-    if(remainder == 0) {
-        return true;
-    } 
-    return false;
+    // let remainder = divisee % divisor;
+    // if(remainder == 0) {
+    //     return true;
+    // } 
+    // return false;
+    return divisee % divisor === 0;
   }
 
   // tests
