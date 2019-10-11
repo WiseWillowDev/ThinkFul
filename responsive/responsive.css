@@ -1,0 +1,31 @@
+/* header {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main {
+    display: grid;
+} */
+
+body {
+
+    /* font-size: calc( var(--h1)/ var(--context) * 1vw) ; */
+    --h1: 24;
+    --p: 20;
+    --li: 20;
+    --context: 10.8;
+
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+h1 {
+    font-size: calc( var(--h1) / var(--context) * 1vw);
+}
+
+p {
+    font-size: calc( var(--p) / var(--context) * 1vw);
+}
+
+@media and screen ()
